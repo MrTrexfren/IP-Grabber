@@ -4,12 +4,12 @@
 #include <windows.h>
 using namespace std;
 
-int ip[9] = {0, 0, 0, 0, 0, 0, 0, 0, 0};
+int ip[12] = {0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0};
 
 void grab() {
 	srand(time(0));
 	cout << "Your IP was: ";
-	for(int i = 0; i < 9; i++) {
+	for(int i = 0; i < 12; i++) {
 		int rand_num = rand() % 10;
 		ip[i] = rand_num;
 		cout << ip[i];
@@ -18,6 +18,9 @@ void grab() {
 				cout << '.';
 				break;
 			case 5:
+				cout << '.';
+				break;
+			case 8:
 				cout << '.';
 				break;
 		}
